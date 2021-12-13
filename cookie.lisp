@@ -17,7 +17,7 @@
 ;;;; under the License.
 ;;;;
 
-(in-package :http)
+(in-package :cl-batteries/http)
 
 ;;; ----------------------------------------------------
 
