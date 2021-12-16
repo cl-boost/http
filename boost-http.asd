@@ -1,10 +1,5 @@
-(defpackage :cl-batteries/http-asd
-  (:use :cl :asdf))
-
-(in-package :cl-batteries/http-asd)
-
-(defsystem :cl-batteries/http
-  :name "cl-batteries/http"
+(asdf:defsystem :boost-http
+  :name "boost-http"
   :version "1.0"
   :author "Jeffrey Massung"
   :license "Apache 2.0"
@@ -25,8 +20,8 @@
                (:file "router")
                (:file "session"))
   :depends-on ("sb-bsd-sockets"
-               "cl-batteries/base64"
-               "cl-batteries/parse"
-               "cl-batteries/re"
-               "cl-batteries/tls"
-               "cl-batteries/url"))
+               "boost-base64"
+               "boost-parse"
+               "boost-re"
+               "boost-tls"
+               "boost-url"))

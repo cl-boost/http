@@ -17,7 +17,7 @@
 ;;;; under the License.
 ;;;;
 
-(in-package :cl-batteries/http)
+(in-package :boost-http)
 
 ;;; ----------------------------------------------------
 
@@ -40,7 +40,7 @@
 
                ;; set the body if it was provided
                (resp-body *response*) ,body))
-       (export ',reply :http))))
+       (export ',reply :boost-http))))
 
 ;;; ----------------------------------------------------
 

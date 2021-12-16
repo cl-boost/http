@@ -17,7 +17,7 @@
 ;;;; under the License.
 ;;;;
 
-(in-package :cl-batteries/http)
+(in-package :boost-http)
 
 ;;; ----------------------------------------------------
 
@@ -351,7 +351,7 @@
 
 (defsetf content-type-parameter (content-type param) (value)
   "Add or change the value of a content-type parameter."
-  `(http::content-type-parameter-set ,content-type ,param ,value))
+  `(boost-http::content-type-parameter-set ,content-type ,param ,value))
 
 ;;; ----------------------------------------------------
 

@@ -2,8 +2,8 @@
 ;;;;
 
 (eval-when (:compile-toplevel :load-toplevel :execute)
-  (use-package :http)
-  (use-package :html))
+  (use-package :boost-http)
+  (use-package :boost-html))
 
 ;;; ----------------------------------------------------
 

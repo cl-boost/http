@@ -17,7 +17,7 @@
 ;;;; under the License.
 ;;;;
 
-(in-package :cl-batteries/http)
+(in-package :boost-http)
 
 ;;; ----------------------------------------------------
 
@@ -57,7 +57,7 @@
 
 (defsetf cookie-attribute (cookie att) (value)
   "Add or change the value of a content-type parameter."
-  `(http::cookie-attribute-set ,cookie ,att ,value))
+  `(boost-http::cookie-attribute-set ,cookie ,att ,value))
 
 ;;; ----------------------------------------------------
 

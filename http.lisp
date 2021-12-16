@@ -17,17 +17,17 @@
 ;;;; under the License.
 ;;;;
 
-(defpackage :cl-batteries/http
+(defpackage :boost-http
   (:use :cl
         :sb-ext
         :sb-bsd-sockets
         :sb-alien
         :sb-thread
-        :cl-batteries/parse
-        :cl-batteries/re
-        :cl-batteries/lexer
-        :cl-batteries/tls
-        :cl-batteries/url)
+        :boost-parse
+        :boost-re
+        :boost-lexer
+        :boost-tls
+        :boost-url)
   (:export
 
    ;; macros
@@ -161,7 +161,7 @@
    #:http-gateway-timeout
    #:http-version-not-supported))
 
-(in-package :cl-batteries/http)
+(in-package :boost-http)
 
 ;;; ----------------------------------------------------
 
